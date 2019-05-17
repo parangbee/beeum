@@ -19,7 +19,7 @@ func (t *TradeWorkflowChaincode) Init(stub shim.ChaincodeStubInterface) pb.Respo
 	fname, args := stub.GetFunctionAndParameters()
 	var err error
 
-	fmt.Printf("[TradeWorkflowChaincode.Init()] %s", fname)
+	fmt.Printf("[TradeWorkflowChaincode.Init()] %s\n", fname)
 
 	if len(args) == 0 {
 		return shim.Success(nil)

@@ -13,11 +13,11 @@ func TestTradeWrokflowInit(t *testing.T) {
 	mstub := shim.NewMockStub("TradeWorkflow", twf)
 
 	args := [][]byte{[]byte("Init"),
-		[]byte("Importer Inc"),
-		[]byte("Importer Bank"),
-		[]byte("1000000"),
 		[]byte("Exporter Inc"),
 		[]byte("Exporter Bank"),
+		[]byte("1000000"),
+		[]byte("Importer Inc"),
+		[]byte("Importer Bank"),
 		[]byte("1000000"),
 		[]byte("KAL"),
 		[]byte("Authority Department")}
